@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container {
+    padding-top: 10rem;
+}
+
+.personal-infos {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #b9b9b9, rgba(0, 0, 0, 0)) 2 100%;
+    border-left: unset;
+    padding: 5px 15px;
+}
+
+.personal-infos h1 {
+    font-size: 2.2rem;
+}
+
+ul.stack {
+    font-size: 1.6rem;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+}
+
+ul.stack li {
+    margin-right: 10px;
+}
+
+ul.stack li:nth-child(1) {
+    color: #f8c231;
+}
+
+ul.stack li:nth-child(2) {
+    color: #61dafb;
+}
+
+ul.stack li:nth-child(3) {
+    color: #fd7e14;
+}
+
+ul.stack li:nth-child(4) {
+    color: darkblue;
+}
+
+.portfolio-image img {
+    border-radius: 50%;
+}
+
+.portfolios img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+.portfolios img:hover {
+    filter: grayscale(0%);
+}
+
+.portfolio-info {
+    padding: 0;
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 0.9rem;
+}
