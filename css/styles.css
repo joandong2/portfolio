@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+/* blue: 1d2f47
+orange: ec6053 */
+
 body {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
+    color: #31c58f;
+    background: #1d2f47;
+    color: #ec6053;
 }
 
 p {
@@ -60,7 +66,7 @@ ul.stack li:nth-child(4) {
 
 .portfolios img {
     width: 100%;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 
 .portfolios img:hover {
