@@ -17,6 +17,14 @@ h1 {
     font-family: "Gochi Hand", cursive;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: #adadad;
+}
+
 p {
     font-size: 1rem;
 }
@@ -62,7 +70,7 @@ ul.stack li:nth-child(3) {
 }
 
 ul.stack li:nth-child(4) {
-    color: darkblue;
+    color: #4faeff;
 }
 
 .portfolio-image img {
@@ -72,6 +80,7 @@ ul.stack li:nth-child(4) {
 .portfolios img {
     width: 100%;
     filter: grayscale(100%);
+    max-height: 210px;
 }
 
 .portfolios img:hover {
