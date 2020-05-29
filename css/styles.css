@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 
 /* blue: 1d2f47
 orange: ec6053 */
@@ -10,6 +11,10 @@ body {
     color: #31c58f;
     background: #1d2f47;
     color: #ec6053;
+}
+
+h1 {
+    font-family: "Gochi Hand", cursive;
 }
 
 p {
