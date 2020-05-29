@@ -44,7 +44,7 @@ p {
 .personal-infos h1 {
     font-size: 2.2rem;
 }
-.personal-infos i {
+.personal-infos p > i {
     font-size: 1.2rem;
     vertical-align: bottom;
     margin-right: 5px;
