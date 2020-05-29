@@ -8,9 +8,8 @@ body {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
-    color: #31c58f;
-    background: #1d2f47;
-    color: #ec6053;
+    background: #404042;
+    color: #e7dbc5;
 }
 
 h1 {
@@ -30,7 +29,7 @@ p {
 }
 
 .container {
-    padding-top: 10rem;
+    padding-top: 8rem;
 }
 
 .personal-infos {
@@ -39,6 +38,7 @@ p {
     border-image: linear-gradient(to bottom, #b9b9b9, rgba(0, 0, 0, 0)) 2 100%;
     border-left: unset;
     padding: 5px 15px;
+    position: fixed;
 }
 
 .personal-infos h1 {
@@ -73,14 +73,25 @@ ul.stack li:nth-child(4) {
     color: #4faeff;
 }
 
+ul.stack li:nth-child(5) {
+    color: #a8a8ff;
+}
+
+.portfolios {
+    margin-left: 20px;
+}
+
 .portfolio-image img {
     border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #e7dbc5;
+    padding: 5px;
 }
 
 .portfolios img {
     width: 100%;
     filter: grayscale(100%);
-    min-height: 200px;
+    min-height: 205px;
 }
 
 .portfolios img:hover {
