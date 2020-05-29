@@ -44,6 +44,11 @@ p {
 .personal-infos h1 {
     font-size: 2.2rem;
 }
+.personal-infos i {
+    font-size: 1.2rem;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
 
 ul.stack {
     font-size: 1.6rem;
