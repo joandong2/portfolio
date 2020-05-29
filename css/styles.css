@@ -88,9 +88,8 @@ ul.stack li:nth-child(5) {
 
 .portfolio-image img {
     border-radius: 50%;
-    border-radius: 50%;
-    border: 5px solid #e7dbc5;
-    padding: 5px;
+    border: 4px solid #e7dbc5;
+    padding: 10px;
 }
 
 .portfolios img {
