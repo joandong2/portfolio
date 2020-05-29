@@ -80,7 +80,7 @@ ul.stack li:nth-child(4) {
 .portfolios img {
     width: 100%;
     filter: grayscale(100%);
-    max-height: 210px;
+    min-height: 200px;
 }
 
 .portfolios img:hover {
