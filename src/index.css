@@ -35,6 +35,10 @@ a {
 
 p, small {
   color: #909090;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 28px;
 }
 
 svg {

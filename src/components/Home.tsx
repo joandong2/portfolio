@@ -1,14 +1,14 @@
 import React from 'react'
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 
 const Home:React.FC = () => {
   return (
     <div className="pb-32">
       <section id="main">
         <div className="mx-auto container">
-          <div className="flex px-8 md:px-32 py-12 flex-col space-y-4 md:grid md:grid-cols-2 md:gap-x-2">
+          <div className="flex px-8 md:px-32 py-12 flex-col md:grid md:grid-cols-2 md:gap-x-2">
             <div className="">
-              <h2 className="uppercase text-8xl">Hello Everyone</h2>
+              <h2 className="uppercase text-8xl"><span className="text-white">Hello</span> Everyone</h2>
             </div>
             <div className="">
               <p>I'm John, front end web developer..Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.</p>
@@ -23,9 +23,10 @@ const Home:React.FC = () => {
       </section>
       <section id="about">
         <div className="mx-auto container">
-          <div className="flex px-8 md:px-32 py-12 flex-col space-y-4 md:grid md:grid-cols-2 md:gap-x-2">
-            <div className="">
-              <h2 className="uppercase text-8xl">About Me</h2>
+          <div className="flex px-8 md:px-32 py-12 flex-col md:grid md:grid-cols-2 md:gap-x-2">
+            <div className="text-left">
+              <h2 className="uppercase text-8xl mb-12"><span className="text-white">About</span> Me</h2>
+              <p className="max-w-[300px]"><img src="/prof3.jpg" alt=""/></p>
             </div>
             <div className="">
               <p>I'm John, front end web developer..Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.</p>
@@ -35,9 +36,9 @@ const Home:React.FC = () => {
       </section>
       <section id="contact">
         <div className="mx-auto container">
-          <div className="flex px-8 md:px-32 py-12 flex-col space-y-4 md:grid md:grid-cols-2 md:gap-x-2">
+          <div className="flex px-8 md:px-32 py-12 flex-col md:grid md:grid-cols-2 md:gap-x-2">
             <div className="">
-              <h2 className="uppercase text-8xl mb-8">Reach Out</h2>
+              <h2 className="uppercase text-8xl mb-8"><span className="text-white">Reach</span> Out</h2>
               <div className="flex flex-col">
                 <p className="mb-4"><AiOutlineMail /> <a href="mailto:johnoblenda@gmail.com">johnoblenda@gmail.com</a></p>
                 <p className=""><AiOutlinePhone /> +1 908 635 2191</p>
