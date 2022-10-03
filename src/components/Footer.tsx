@@ -10,9 +10,8 @@ const Footer:React.FC = () => {
         </div>
         <div className="flex md:justify-between space-x-3">
           <p><AiOutlineMail /> <a href="mailto:johnoblenda@gmail.com">johnoblenda@gmail.com</a></p>
-          <a href="/"><AiFillLinkedin /></a>
-          <a href="/"><AiFillGithub /></a>
-          <a href="/"><AiFillInstagram /></a>
+          <a href="https://www.linkedin.com/in/john-oblenda/"><AiFillLinkedin /></a>
+          <a href="https://github.com/joandong2"><AiFillGithub /></a>
         </div>
       </div>
     </section>
