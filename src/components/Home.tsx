@@ -17,9 +17,32 @@ const Home:React.FC = () => {
           </div>
         </div>
       </section>
-      <section id="projects">
+      <section id="projects" className="p-20">
         <div className="mx-auto container">
-          <h1>Projects</h1>
+          <p className="uppercase text-white mb-8">My Works</p>
+          <div className="grid grid-cols-4">
+          <div className="relative project">
+              <img src="./projects/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg" alt="" />
+              <div className="desc opacity-0 absolute bottom-0 px-4 py-2 w-full font-istok">
+                <p className="text-sm mb-0 leading-4 text-[#AAAAAA]">React Website</p>
+                <p className="text-[10px] leading-normal">Portfolio</p>
+              </div>
+            </div> {/** end */}
+            <div className="relative project">
+              <img src="./projects/halfcut-pokemon-WC_Qjaryv4Y-unsplash.jpg" alt="" />
+              <div className="desc opacity-0 absolute bottom-0 px-4 py-2 w-full font-istok">
+                <p className="text-sm mb-0 leading-4 text-[#AAAAAA]">React Website</p>
+                <p className="text-[10px] leading-normal">Pokemon</p>
+              </div>
+            </div> {/** end */}
+            <div className="relative project">
+              <img src="./projects/ronnie-george-9gGvNWBeOq4-unsplash.jpg" alt="" />
+              <div className="desc opacity-0 absolute bottom-0 px-4 py-2 w-full font-istok">
+                <p className="text-sm mb-0 leading-4 text-[#AAAAAA]">React Website</p>
+                <p className="text-[10px] leading-normal">Real-estate</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="about">
@@ -32,7 +55,7 @@ const Home:React.FC = () => {
               <p>I'm John, front end web developer. I am interested with projects involving education and healthcare.</p>
             </div>
             <div className="text-left mb-6">
-              <p className="max-w-[300px]"><img src="/prof3.jpg" alt=""/></p>
+              <p className="max-w-[300px]"><img className="profile-picture" src="/proj3.jpg" alt=""/></p>
             </div>
             <div className="">
               <p className="uppercase text-white mb-8">Skills</p>
