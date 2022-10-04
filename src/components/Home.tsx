@@ -13,7 +13,7 @@ const Home:React.FC = () => {
               <h2 className="uppercase text-6xl"><span className="text-white">Hello</span> Everyone</h2>
             </div>
             <div className="">
-              <p>I'm John, front end web developer. I am interested with projects involving education and healthcare.</p>
+              <p>I'm John Oblenda, front end web developer. I am interested with projects involving education and healthcare.</p>
             </div>
           </div>
         </div>

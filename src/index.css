@@ -45,7 +45,7 @@ svg {
   display: inline-block
 }
 
-#projects img,
+.project img,
 .profile-picture {
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%);
@@ -53,9 +53,12 @@ svg {
 
 
 .project img:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
   cursor: pointer;
+}
+
+.modal img {
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
 }
 
 .project .desc {

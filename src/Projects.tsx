@@ -1,23 +1,34 @@
 import React from 'react'
+import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 
 const projects_data  = [
     {
         "id": "1",
         "name": "React Website",
-        "description": "Portfolio",
-        "profile": "sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg"
+        "tagline": "made with React and Tailwind CSS",
+        "description": "I used React and TailwindCss for this project.",
+        "profile": "sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg",
+        "image": "portfolio.jpg",
+        "url": '',
+        "github": "https://github.com/joandong2/portfolio"
     },
     {
         "id": "2",
         "name": "React Website",
-        "description": "Pokemon",
-        "profile": "halfcut-pokemon-WC_Qjaryv4Y-unsplash.jpg"
+        "tagline": "My Pokedex",
+        "profile": "halfcut-pokemon-WC_Qjaryv4Y-unsplash.jpg",
+        "image": "pokemon.jpeg",
+        "url": "https://pokedex-tau-eight.vercel.app/",
+        "github": "https://github.com/joandong2/pokedex"
     },
     {
         "id": "3",
         "name": "React Website",
-        "description": "Real-estate",
-        "profile": "ronnie-george-9gGvNWBeOq4-unsplash.jpg"
+        "tagline": "Simple listing of properties",
+        "profile": "ronnie-george-9gGvNWBeOq4-unsplash.jpg",
+        "image": "real.jpg",
+        "url": '',
+        "github": "https://github.com/joandong2/real-estate"
     },
 ]
 
@@ -34,23 +45,18 @@ const Projects:React.FC = () => {
                             <>
                                 <div className="relative project" data-bs-toggle="modal" data-bs-target={`#modal-${project.id}`}>
                                     <img src={`./projects/${project.profile}`} alt={project.name} />
-                                    <div className="desc opacity-0 absolute bottom-0 px-4 py-2 w-full font-istok">
-                                        <p className="text-sm mb-0 leading-4 text-[#AAAAAA]">{project.name}</p>
-                                        <p className="text-[10px] leading-normal">{project.description}</p>
-                                    </div>
-                                </div>
-                                <div className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id={`modal-${project.id}`} aria-labelledby={`modal-${project.id}`} aria-modal="true" role="dialog">
-                                    <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
-                                        <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                                        <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                                            <button type="button"
-                                            className="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <div className="desc opacity-0 absolute bottom-0 px-4 py-2 w-full font-istok flex justify-between">
+                                        <div>
+                                            <p className="text-sm mb-0 leading-4 text-[#AAAAAA]">{project.name}</p>
+                                            <p className="text-[10px] leading-normal">{project.tagline}</p>
                                         </div>
-                                        <div className="modal-body relative p-4">
-                                            <p>{project.name}</p>
-                                            <p>{project.description}</p>
-                                        </div>
+                                        <div>
+                                            {project.url ? (
+                                                <a className="text-2xl hover:text-white text-[#909090]" href={project.url} target="_blank" rel="noreferrer"><AiFillEye /></a>
+                                                ) : (
+                                                null
+                                            )}
+                                            <a className="text-2xl hover:text-white text-[#909090]" href={project.github} target="_blank" rel="noreferrer"><AiFillGithub /></a>
                                         </div>
                                     </div>
                                 </div>
