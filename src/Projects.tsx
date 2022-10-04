@@ -26,11 +26,19 @@ const projects_data  = [
         "name": "React Website",
         "tagline": "Simple listing of properties",
         "profile": "ronnie-george-9gGvNWBeOq4-unsplash.jpg",
-        "image": "real.jpg",
         "url": '',
         "github": "https://github.com/joandong2/real-estate"
     },
+    {
+        "id": "3",
+        "name": "Marketing Website",
+        "tagline": "Bootcamp Project",
+        "profile": "avel-chuklanov-Ks4t8IK8Kgw-unsplash.jpg",
+        "url": "https://educell-jo.vercel.app/",
+        "github": "https://github.com/Build-Week-International-S-S-W/Web-UI-John"
+    },
 ]
+
 
 
 const Projects:React.FC = () => {
@@ -50,7 +58,7 @@ const Projects:React.FC = () => {
                                             <p className="text-sm mb-0 leading-4 text-[#AAAAAA]">{project.name}</p>
                                             <p className="text-[10px] leading-normal">{project.tagline}</p>
                                         </div>
-                                        <div>
+                                        <div className="space-x-1">
                                             {project.url ? (
                                                 <a className="text-2xl hover:text-white text-[#909090]" href={project.url} target="_blank" rel="noreferrer"><AiFillEye /></a>
                                                 ) : (
