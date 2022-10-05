@@ -1,5 +1,5 @@
-import React from 'react'
-import { SubmitHandler, useForm, Resolver } from 'react-hook-form';
+import React, { useState } from 'react'
+import { useForm, Resolver } from 'react-hook-form';
 import { GoStop } from 'react-icons/go';
 import emailjs from '@emailjs/browser';
 
@@ -37,9 +37,10 @@ const resolver: Resolver<FormValues> = async (values) => {
 };
 
 const InquiryForm:React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormValues>({ resolver });
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormValues>({ resolver });
+  const [notif, setNotif] = useState<String>('')
   
-  const onSubmit = (data: any)=> {
+  const onSubmit = (data: FormValues)=> {
     try {
       emailjs.send(
           "service_0x7fznh",
@@ -49,7 +50,8 @@ const InquiryForm:React.FC = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            setNotif('Thank you for getting in touch! Looking forward meeting you!')
+            reset();
         },(error) => {
             console.log("Error:" + error.text);
           }
@@ -57,8 +59,6 @@ const InquiryForm:React.FC = () => {
     } catch (e) {
       console.log(e);
     }
-
-    // console.log(data);
     // emailjs.sendForm('service_0x7fznh', 'template_uw78xko', data, 'GaczygC3Z26vSk_Y6')
     //   .then((res) => {
     //       console.log('hello');
@@ -69,6 +69,7 @@ const InquiryForm:React.FC = () => {
 
   return (
     <>
+      {notif ? (<p className="border leading-4 text-sm p-2 mb-2">{notif}</p>) : (null) }
       <form onSubmit={handleSubmit(onSubmit)}>
         <input className="bg-[#303030] shadow appearance-none w-full p-3 text-[#909090] mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("name")} placeholder="Name" />
         {errors?.name && <p className="mb-1 mt-[-0.25rem]"><GoStop /> {errors.name.message}</p>}
