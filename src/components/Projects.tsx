@@ -30,7 +30,7 @@ const projects_data  = [
         "github": "https://github.com/joandong2/real-estate"
     },
     {
-        "id": "3",
+        "id": "4",
         "name": "Marketing Website",
         "tagline": "Bootcamp Project",
         "profile": "avel-chuklanov-Ks4t8IK8Kgw-unsplash.jpg",
@@ -38,8 +38,6 @@ const projects_data  = [
         "github": "https://github.com/Build-Week-International-S-S-W/Web-UI-John"
     },
 ]
-
-
 
 const Projects:React.FC = () => {
   return (
@@ -50,7 +48,7 @@ const Projects:React.FC = () => {
                 <div className="grid grid-cols-4">
                     {projects_data ? (
                         projects_data.map(project => (
-                            <>
+                            <div key={project.id}>
                                 <div className="relative project" data-bs-toggle="modal" data-bs-target={`#modal-${project.id}`}>
                                     <img src={`./projects/${project.profile}`} alt={project.name} />
                                     <div className="desc opacity-0 absolute bottom-0 px-4 py-2 w-full font-istok flex justify-between">
@@ -68,7 +66,7 @@ const Projects:React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </>
+                            </div>
                         ))
                     ) : (
                         <h4>No projects posted..</h4>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineMail, AiOutlinePhone, AiTwotoneHome } from 'react-icons/ai'
-import Projects from '../Projects'
+import Projects from './Projects'
 import InquiryForm from './InquiryForm'
 
 const Home:React.FC = () => {

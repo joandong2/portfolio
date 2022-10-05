@@ -1,6 +1,7 @@
 import React from 'react'
-import { useForm, Resolver } from 'react-hook-form';
+import { SubmitHandler, useForm, Resolver } from 'react-hook-form';
 import { GoStop } from 'react-icons/go';
+import emailjs from '@emailjs/browser';
 
 type FormValues = {
   name: string;
@@ -11,8 +12,8 @@ type FormValues = {
 
 const resolver: Resolver<FormValues> = async (values) => {
   return {
-    values: values.name || values.email || values.phone || values.inquiry ? values : {},
-    errors: !values.name || !values.email || values.phone || values.inquiry
+    values: values.name ? values : {},
+    errors: !values.name
       ? {
         name: {
             type: 'required',
@@ -37,11 +38,19 @@ const resolver: Resolver<FormValues> = async (values) => {
 
 const InquiryForm:React.FC = () => {
   const { register, handleSubmit, formState: { errors } } = useForm<FormValues>({ resolver });
-  const onSubmit = handleSubmit((data) => console.log(data));
+  
+  const onSubmit: SubmitHandler<FormValues> = (data: any)=> {
+    emailjs.sendForm('service_0x7fznh', 'template_uw78xko', data as HTMLFormElement, 'GaczygC3Z26vSk_Y6')
+      .then((result) => {
+          console.log('hello', result.text);
+      }, (error) => {
+          console.log('err', error.text);
+      });
+  };
 
   return (
     <>
-      <form onSubmit={onSubmit} className="">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <input className="bg-[#303030] shadow appearance-none w-full p-3 text-[#909090] mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("name")} placeholder="Name" />
         {errors?.name && <p className="mb-1 mt-[-0.25rem]"><GoStop /> {errors.name.message}</p>}
         <input className="bg-[#303030] shadow appearance-none w-full p-3 text-[#909090] mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("email")} placeholder="Email Address" />
