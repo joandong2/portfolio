@@ -7,7 +7,7 @@ type FormValues = {
   name: string;
   email: string;
   phone: string;
-  inquiry: string;
+  message?: string;
 };
 
 const resolver: Resolver<FormValues> = async (values) => {
@@ -39,13 +39,32 @@ const resolver: Resolver<FormValues> = async (values) => {
 const InquiryForm:React.FC = () => {
   const { register, handleSubmit, formState: { errors } } = useForm<FormValues>({ resolver });
   
-  const onSubmit: SubmitHandler<FormValues> = (data: any)=> {
-    emailjs.sendForm('service_0x7fznh', 'template_uw78xko', data as HTMLFormElement, 'GaczygC3Z26vSk_Y6')
-      .then((result) => {
-          console.log('hello', result.text);
-      }, (error) => {
-          console.log('err', error.text);
-      });
+  const onSubmit = (data: any)=> {
+    try {
+      emailjs.send(
+          "service_0x7fznh",
+          "template_uw78xko",
+          data,
+          "GaczygC3Z26vSk_Y6"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+        },(error) => {
+            console.log("Error:" + error.text);
+          }
+        );
+    } catch (e) {
+      console.log(e);
+    }
+
+    // console.log(data);
+    // emailjs.sendForm('service_0x7fznh', 'template_uw78xko', data, 'GaczygC3Z26vSk_Y6')
+    //   .then((res) => {
+    //       console.log('hello');
+    //   }, (error) => {
+    //       console.log('err', error);
+    //   });
   };
 
   return (
@@ -57,8 +76,8 @@ const InquiryForm:React.FC = () => {
         {errors?.email && <p className="mb-1 mt-[-0.25rem]"><GoStop /> {errors.email.message}</p>}
         <input className="bg-[#303030] shadow appearance-none w-full p-3 text-[#909090] mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("phone")} placeholder="Phone Number" />
         {errors?.phone && <p className="mb-1 mt-[-0.25rem]"><GoStop /> {errors.phone.message}</p>}
-        <textarea className="bg-[#303030] shadow appearance-none w-full p-3 text-[#909090] mb-1 leading-tight focus:outline-none focus:shadow-outline min-h-[150px]" {...register("inquiry")} placeholder="Message"></textarea>
-        {errors?.inquiry && <p className="mb-1 mt-[-0.25rem]"><GoStop /> {errors.inquiry.message}</p>}
+        <textarea className="bg-[#303030] shadow appearance-none w-full p-3 text-[#909090] mb-1 leading-tight focus:outline-none focus:shadow-outline min-h-[150px]" {...register("message")} placeholder="Message"></textarea>
+        {errors?.message && <p className="mb-1 mt-[-0.25rem]"><GoStop /> {errors.message.message}</p>}
         <input type="submit" value="Send Message" className="border border-[#303030] text-[#909090] py-2 px-4 focus:outline-none focus:shadow-outline cursor-pointer hover:text-white hover:border-white"/>
       </form>
     </>
