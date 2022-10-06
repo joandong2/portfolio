@@ -5,7 +5,7 @@ const projects_data  = [
     {
         "id": "1",
         "name": "React Website",
-        "tagline": "made with React and Tailwind CSS",
+        "tagline": "My Portfolio",
         "description": "I used React and TailwindCss for this project.",
         "profile": "sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg",
         "image": "portfolio.jpg",
@@ -42,7 +42,7 @@ const projects_data  = [
 const Projects:React.FC = () => {
   return (
     <>
-        <section id="projects" className="p-20">
+        <section id="projects" className="p-12">
             <div className="mx-auto container">
             <p className="uppercase text-white mb-8">My Works</p>
                 <div className="grid grid-cols-4">
