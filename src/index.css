@@ -9,9 +9,16 @@ body {
   font-family: 'Istok Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container.dark {
   background-color: #1F1F1F;
   color: #909090;
-  /* background: url('../public/—Pngtree—_5194037.png')no-repeat; */
+}
+
+.main-container {
+  background-color: #e8e8e8;
+  color: #414141;
 }
 
 code {
@@ -77,11 +84,21 @@ svg {
   transition: 0.2s;
 }
 
-#footer {
+.dark #footer {
   background-image: -webkit-linear-gradient(top, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.6) 22%, rgba(31, 31, 31, 0.7) 36%, rgba(31, 31, 31, 0.9) 55%, #1F1F1F 76%);
   background-image: -moz-linear-gradient(top, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.6) 22%, rgba(31, 31, 31, 0.7) 36%, rgba(31, 31, 31, 0.9) 55%, #1F1F1F 76%);
   background-image: -o-linear-gradient(top, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.6) 22%, rgba(31, 31, 31, 0.7) 36%, rgba(31, 31, 31, 0.9) 55%, #1F1F1F 76%);
   background-image: linear-gradient(-180deg, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.6) 22%, rgba(31, 31, 31, 0.7) 36%, rgba(31, 31, 31, 0.9) 55%, #1F1F1F 76%);
+}
+
+.footer #footer {
+  background-image: -webkit-linear-gradient(top, rgba(232, 232, 232, 0) 0%, rgba(232, 232, 232, 0.6) 32%, rgba(232, 232, 232, 0.7) 38%, rgba(232, 232, 232, 0.9) 60%, #E8E8E8 76%);
+  background-image: -moz-linear-gradient(top, rgba(232, 232, 232, 0) 0%, rgba(232, 232, 232, 0.6) 32%, rgba(232, 232, 232, 0.7) 38%, rgba(232, 232, 232, 0.9) 60%, #E8E8E8 76%);
+  background-image: -o-linear-gradient(top, rgba(232, 232, 232, 0) 0%, rgba(232, 232, 232, 0.6) 32%, rgba(232, 232, 232, 0.7) 38%, rgba(232, 232, 232, 0.9) 60%, #E8E8E8 76%);
+  background-image: linear-gradient(180deg, rgba(232, 232, 232, 0) 0%, rgba(232, 232, 232, 0.6) 32%, rgba(232, 232, 232, 0.7) 38%, rgba(232, 232, 232, 0.9) 60%, #E8E8E8 76%);
+}
+
+#footer {
   height: 100px;
   /* width: -webkit-calc(100% - 32px);
   width: -moz-calc(100% - 32px);
