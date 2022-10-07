@@ -26,6 +26,16 @@ code {
     monospace;
 }
 
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  font-family: 'Oswald', sans-serif;
+  color: #BEBEBE;
+}
+
 h1,
 h2,
 h3,
@@ -33,16 +43,25 @@ h4,
 h5,
 h6 {
   font-family: 'Oswald', sans-serif;
+  color: #414141;
+}
+
+.dark a {
   color: #BEBEBE;
 }
 
 a {
   text-decoration: none;
-  color: #BEBEBE;
+  color: #414141;
+}
+
+.dark p, 
+.dark small {
+  color: #909090;
 }
 
 p, small {
-  color: #909090;
+  color: #414141;
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.4px;
