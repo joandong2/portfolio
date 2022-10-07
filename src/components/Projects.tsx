@@ -26,7 +26,7 @@ const projects_data  = [
         "name": "React Website",
         "tagline": "Simple listing of properties",
         "profile": "ronnie-george-9gGvNWBeOq4-unsplash.jpg",
-        "url": '',
+        "url": "https://real-estate-jo.vercel.app/",
         "github": "https://github.com/joandong2/real-estate"
     },
     {
@@ -45,7 +45,7 @@ const Projects:React.FC = () => {
         <section id="projects" className="p-12">
             <div className="mx-auto container">
             <p className="uppercase text-white mb-8">My Works</p>
-                <div className="grid grid-cols-4">
+                <div className="flex flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-4">
                     {projects_data ? (
                         projects_data.map(project => (
                             <div key={project.id}>

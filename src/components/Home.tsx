@@ -14,7 +14,7 @@ const Home:React.FC = () => {
             </div>
             <div className="mb-20"></div>
             <div className="">
-              <p className="mb-8">I'm John Oblenda, front end web developer. I have 4+ yrs experienced in web development mostly doing Wordpress-based websites. I also completed a Full-stack Web Development program with BloomTech (formerly Lambda School). I'm have high interest with frontend as it keeps me very excited making interactive, featured-rich and beautifully crafted designs made into a website. I'm also very interested in projects concerning healthcare and education.</p>
+              <p className="mb-8">I'm John Oblenda, frontend web developer. I have 4+ yrs experienced in web development mostly doing Wordpress-based websites. I also completed a Full-stack Web Development program with BloomTech (formerly Lambda School). I'm have high interest with frontend as it keeps me very excited making interactive, featured-rich and beautifully crafted designs made into a website. I'm also very interested in projects concerning healthcare, education and sports.</p>
             </div>
             <div className="">
               <div className="">
@@ -81,7 +81,7 @@ const Home:React.FC = () => {
             </div>
             <div className="mb-6">
               <div className="flex flex-col">
-                <p className="mb-4">Looking forward to meet great people!</p>
+                <p className="mb-4">Looking forward meeting great people!</p>
                 <p className="mb-4"><AiTwotoneHome /> Bridgewater, New Jersey</p>
                 <p className="mb-4"><AiOutlineMail /> <a href="mailto:johnoblenda@gmail.com">johnoblenda@gmail.com</a></p>
                 <p className=""><AiOutlinePhone /> +1 908 635 2191</p>
