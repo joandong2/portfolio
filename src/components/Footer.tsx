@@ -12,8 +12,6 @@ const Footer:React.FC<Props> = ({darkMode, setDarkMode}) => {
     setDarkMode(!darkMode)
   }
 
-  console.log('mode', darkMode);
-
   return (
     <section id="footer">
       <div className="mx-auto container px-4 flex flex-col md:flex-row justify-between">
