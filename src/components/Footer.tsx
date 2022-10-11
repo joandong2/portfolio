@@ -17,7 +17,7 @@ const Footer:React.FC<Props> = ({darkMode, setDarkMode}) => {
       <div className="mx-auto container px-4 flex flex-col md:flex-row justify-between">
         <div className="flex space-x-3 align-middle items-center">
           <p className="text-sm">&copy; 2022 All Rights Reserved.</p>
-          <button onClick={handleClick} className={`text-sm border px-2 hover:bg-white ${!darkMode ? 'hover:bg-white border-[#414141]' : ''}`}>{darkMode ? 'Dark Mode' : 'Light Mode'}</button>
+          {/* <button onClick={handleClick} className={`text-sm border px-2 hover:bg-white ${!darkMode ? 'hover:bg-white border-[#414141]' : ''}`}>{darkMode ? 'Light Mode' : 'Dark Mode'}</button> */}
         </div>
         <div className="flex md:justify-between space-x-3">
           <p><AiOutlineMail /> <a href="mailto:johnoblenda@gmail.com">johnoblenda@gmail.com</a></p>
