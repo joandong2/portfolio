@@ -14,7 +14,7 @@ const projects_data = [
   },
   {
     id: "2",
-    name: "Wordpress Listing w/ Blog",
+    name: "Blog Listing",
     tagline: "Wordpress Project",
     profile: "markus-winkler-afW1hht0NSs-unsplash.jpg",
     url: "https://noypi.joblenda.me/",
