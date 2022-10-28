@@ -22,8 +22,8 @@ const projects_data = [
   },
   {
     id: "3",
-    name: "React Website",
-    tagline: "My Pokedex",
+    name: "Pokedex",
+    tagline: "React",
     profile: "halfcut-pokemon-WC_Qjaryv4Y-unsplash.jpg",
     image: "pokemon.jpeg",
     url: "https://pokedex-tau-eight.vercel.app/",
@@ -31,8 +31,8 @@ const projects_data = [
   },
   {
     id: "4",
-    name: "React Website",
-    tagline: "Simple listing of properties",
+    name: "Property Listing",
+    tagline: "React",
     profile: "ronnie-george-9gGvNWBeOq4-unsplash.jpg",
     url: "https://real-estate-jo.vercel.app/",
     github: "https://github.com/joandong2/real-estate",
