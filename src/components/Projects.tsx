@@ -4,8 +4,8 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 const projects_data = [
   {
     id: "1",
-    name: "React Website",
-    tagline: "My Portfolio",
+    name: "Portfolio",
+    tagline: "React",
     description: "I used React and TailwindCss for this project.",
     profile: "sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg",
     image: "portfolio.jpg",
@@ -15,13 +15,21 @@ const projects_data = [
   {
     id: "2",
     name: "Blog Listing",
-    tagline: "Wordpress Project",
+    tagline: "Wordpress",
     profile: "markus-winkler-afW1hht0NSs-unsplash.jpg",
     url: "https://noypi.joblenda.me/",
     github: "https://github.com/joandong2/maga-zine",
   },
   {
     id: "3",
+    name: "Shopping Website",
+    tagline: "Woocommmerce + Wordpress",
+    profile: "pexels-evg-kowalievska-1126993.jpg",
+    url: "https://shoppi.joblenda.me/",
+    github: "https://github.com/joandong2/shoppi",
+  },
+  {
+    id: "4",
     name: "Pokedex",
     tagline: "React",
     profile: "halfcut-pokemon-WC_Qjaryv4Y-unsplash.jpg",
@@ -30,7 +38,7 @@ const projects_data = [
     github: "https://github.com/joandong2/pokedex",
   },
   {
-    id: "4",
+    id: "5",
     name: "Property Listing",
     tagline: "React",
     profile: "ronnie-george-9gGvNWBeOq4-unsplash.jpg",
@@ -38,9 +46,9 @@ const projects_data = [
     github: "https://github.com/joandong2/real-estate",
   },
   {
-    id: "5",
+    id: "6",
     name: "Marketing Website",
-    tagline: "Bootcamp Project",
+    tagline: "HTML/CSS",
     profile: "avel-chuklanov-Ks4t8IK8Kgw-unsplash.jpg",
     url: "https://educell-jo.vercel.app/",
     github: "https://github.com/Build-Week-International-S-S-W/Web-UI-John",
